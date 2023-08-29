@@ -1,0 +1,19 @@
+.button {
+    width: 11.5625rem;
+    height: 4.375rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    border: 3px solid #B0D9D6;
+    background: #D5F0D3;
+    box-shadow: -2px 7px 6px 3px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.button:hover {
+    background-color: #E7FFE5;
+}

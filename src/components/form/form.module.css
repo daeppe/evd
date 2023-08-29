@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5rem auto;
+    align-items: center;
+    gap: 10rem;
+}
+
+.form>div {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+}

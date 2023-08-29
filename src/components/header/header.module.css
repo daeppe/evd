@@ -1,0 +1,22 @@
+.header {
+    width: 53.1875rem;
+    height: 5.3125rem;
+    flex-shrink: 0;
+    margin: 1rem auto;
+}
+
+.header>h1 {
+    margin: auto;
+    width: 47.25rem;
+    color: #000;
+    text-align: center;
+    font-family: Secular One;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header>hr {
+    width: 53.1875rem;
+}
