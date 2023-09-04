@@ -9,7 +9,7 @@ const Form = (props) => {
     const urlVideo = props.urlVideo;
 
     const handleSubmit = (event) => {
-        setIsLoading(!isLoading);
+        urlVideo && setIsLoading(!isLoading);
         event.preventDefault();
     };
 

@@ -2,8 +2,8 @@ import ytdl from 'ytdl-core';
 
 export default async function handler(req, res) {
   try {
-    const isMp3 = req.query.ext === 'mp3'
-    res.setHeader("Content-Disposition", 'attachement')
+    const isMp3 = req.query.ext === 'mp3';
+    res.setHeader('Content-Disposition', 'attachement');
     return isMp3 ?
       ytdl(req.query.url, {
         quality: 'highestaudio',
@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       :
       ytdl(req.query.url, {
         quality: 'highestaudio',
-      }).pipe(res)
+      }).pipe(res);
 
   } catch (error) {
     res.status(500).json({ message: `${error}` });

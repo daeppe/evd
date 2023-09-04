@@ -6,7 +6,7 @@ const Button = (props) => {
     const onClick = props.onClick;
     const isLoading = props.isLoading;
 
-    return <button className={styles['button']} type={type} onClick={onClick} disabled={isLoading} >{child}</button>;
+    return <button className={styles['button']} type={type} onClick={onClick} disabled={isLoading} >{isLoading ? '' : child}</button>;
 };
 
 export default Button;
