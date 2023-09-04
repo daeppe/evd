@@ -12,8 +12,29 @@
     font-style: normal;
     font-weight: bold;
     line-height: normal;
+    transition: 0.3s;
 }
 
 .button:hover {
     background-color: #E7FFE5;
+}
+
+.button:disabled {
+    width: 32px;
+    height: 32px;
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border-top: 10px solid white;
+    animation: spin 2s infinite linear;
+    cursor: not-allowed;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
